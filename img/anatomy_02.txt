@@ -1,0 +1,21 @@
+
+                <area alt="" title="" nohref shape="poly" coords="179,250,182,81,256,134"  onclick="showCoordsCyca(event, 'rec1');"/>
+                <area alt="" title="" nohref shape="poly" coords="180,253,256,136,268,219" onclick="showCoordsCyca(event, 'rec2');"/>
+                <area alt="" title="" nohref shape="poly" coords="180,255,267,221,257,314" onclick="showCoordsCyca(event, 'rec3');"/>
+                <area alt="" title="" nohref shape="poly" coords="181,258,253,316,231,337,212,350,183,354" onclick="showCoordsCyca(event, 'rec4');"/>
+                <area alt="" title="" nohref shape="poly" coords="178,258,180,355,154,352,129,342,110,331" onclick="showCoordsCyca(event, 'rec5');"/>
+                <area alt="" title="" nohref shape="poly" coords="110,333,93,314,84,290,80,270,176,256" onclick="showCoordsCyca(event, 'rec6');"/>
+                <area alt="" title="" nohref shape="poly" coords="175,254,78,269,79,233,83,214" onclick="showCoordsCyca(event, 'rec7');"/>
+                <area alt="" title="" nohref shape="poly" coords="84,211,104,123,174,251" onclick="showCoordsCyca(event, 'rec8');"/>
+                <area alt="" title="" nohref shape="poly" coords="106,121,176,250,180,81"  onclick="showCoordsCyca(event, 'rec9');"/>
+
+
+                <area alt="" title="" nohref shape="poly" coords="394,77,391,251,471,119" onclick="showCoordsCyca(event, 'rec10');"/>
+                <area alt="" title="" nohref shape="poly" coords="472,121,490,188,393,251" onclick="showCoordsCyca(event, 'rec11');"/>
+                <area alt="" title="" nohref shape="poly" coords="491,192,495,268,395,252" onclick="showCoordsCyca(event, 'rec12');"/>
+                <area alt="" title="" nohref shape="poly" coords="495,271,482,303,453,339,393,253" onclick="showCoordsCyca(event, 'rec13');"/>
+                <area alt="" title="" nohref shape="poly" coords="453,341,426,351,399,355,391,355,391,254" onclick="showCoordsCyca(event, 'rec14');"/>
+                <area alt="" title="" nohref shape="poly" coords="389,253,389,354,361,349,344,340,331,327,326,323,321,317" onclick="showCoordsCyca(event, 'rec15');"/>
+                <area alt="" title="" nohref shape="poly" coords="388,251,318,316,310,293,307,261,304,220" onclick="showCoordsCyca(event, 'rec16');"/>
+                <area alt="" title="" nohref shape="poly" coords="388,249,306,220,305,178,312,138" onclick="showCoordsCyca(event, 'rec17');"/>
+                <area alt="" title="" nohref shape="poly" coords="388,247,314,136,345,102,393,79" onclick="showCoordsCyca(event, 'rec18');"/>

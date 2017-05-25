@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!----------------------------------------------------
+* Project:     Klinika_Local
+* Filename:    NyForm_05_karmienieSzpital.html
+* Encoding:    UTF-8
+* Created:     2016-08-06
+*
+* Author       Bartosz M. Lewiński <jabarti@wp.pl>
+------------------------------------------------------>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="form-group form-buffer-pa">
+            <h2>Karmienie w szpitalu</h2>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Pierwsze karmienie, doba, godzina</label>
+                <div class="col-sm-4">
+                    <textarea class="form-control" placeholder="pierwsze karmienie" name="pierwsze_karmienie" id="pierwsze_karmienie"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Problemy z dzieckiem</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="problem_dziecko" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="problem_dziecko" value="1">tak</label>
+                </div>
+                
+                <div id="problem_dziecko_show">
+                    <label class="col-sm-1 control-label">jakie?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jakie problemy" name="problem_dziecko_opis" id="problem_dziecko_opis">
+                    </div>
+                </div>
+
+                <p class="col-sm-12"></p>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Problemy z mamą</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio"  name="problem_mama" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio"  name="problem_mama" value="1">tak</label>
+                </div>
+                <div id="problem_mama_show">
+                    <label class="col-sm-1 control-label">jakie?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jakie problemy" name="problem_mama_opis" id="problem_mama_opis">
+                    </div>
+                </div>
+
+                <p class="col-sm-12"></p>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Karmienie piersią</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="karmienie_piersia" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="karmienie_piersia" value="1">tak</label>
+                </div>
+
+                <div id="karmienie_piersia_show">
+                    <label class="col-sm-1 control-label">jakie?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jak często" name="karmienie_piersia_opis" id="karmienie_piersia_opis">
+                    </div>
+                </div>
+
+                <p class="col-sm-12"></p>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Kapturek</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="kapturek" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="kapturek" value="1">tak</label>
+                </div>
+
+                <div id="kapturek_show">
+                    <label  class="col-sm-1 control-label">jakie?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="od kiedy/jak długo" name="kapturek_opis" id="kapturek_opis">
+                    </div>
+                </div>
+
+                <p class="col-sm-12"></p>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Dokarmianie, dopajanie</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="dopajanie" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="dopajanie" value="1">tak</label>
+                </div>
+
+                <div id='dopajanie_show'>
+                    <label class="col-sm-1 control-label">czym?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="czym" name="dopajanie_czym" id="dopajanie_czym">
+                    </div>
+                    <label  class="col-sm-6 control-label">jak długo?</label>
+                    <div  class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="dopajanie jak dlugo" name="dopajanie_jak_dlugo" id="dopajanie_jak_dlugo">
+                    </div>
+                    <label  class="col-sm-6 control-label">jakie?</label>
+                    <div  class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jak" name="dopajanie_opis" id="dopajanie_opis">
+                    </div>
+                </div>
+
+                <p class="col-sm-12"></p>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Nawał</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="nawal" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="nawal" value="1">tak</label>
+                </div>
+
+                <div id='nawal_show'>
+                    <label  class="col-sm-1 control-label">która doba?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="która doba" name="nawal_opis" id="nawal_opis">
+                    </div>
+                </div>
+
+                <p class="col-sm-12"></p>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Pobyt</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="pobyt" value="0" >mama z dzieckiem</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="pobyt" value="1">oddzielnie</label>
+                </div>                                
+            </div>
+        </div>
+    </body>
+</html>

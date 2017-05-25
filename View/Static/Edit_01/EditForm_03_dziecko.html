@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!----------------------------------------------------
+* Project:     Klinika_Local
+* Filename:    NyForm_03_dziecko.html
+* Encoding:    UTF-8
+* Created:     2016-08-06
+*
+* Author       Bartosz M. Lewiński <jabarti@wp.pl>
+------------------------------------------------------>
+<html>
+    <body>
+        <div class="form-group form-buffer-pa">
+            <h2>Dziecko: </h2>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Imię</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" placeholder="podaj imię dziecka" name="imie_dziecka" id="imie_dziecka" required>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Data urodzenia</label>
+                <div class="col-sm-3">
+                    <!--input type="date" id="data_urodzenia_dziecko" name="data_urodzenia_dziecko" min="1990-01-01" max="2017-12-31" required /-->
+                    <input type="text" id="data_urodzenia_dziecko" name="data_urodzenia_dziecko"  required />
+                </div>    
+                <label class="col-sm-2 control-label">Wiek dziś</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" id="wiek_dziecka_dzis" disabled>
+                </div>
+
+                <label class="col-sm-8 control-label">Wiek wtedy</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" id="wiek_dziecka_wtedy" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Które dziecko</label>
+                <div class="col-sm-1">
+                    <input class="form-control" type="number" id="ktore_dziecko" name="ktore_dziecko" min="1">
+                </div>
+            </div>
+            
+            <div id="dziecko_pop_show" class="form-group" >
+
+                <label class="col-sm-3 control-label">Imię poprzedniego dziecka</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" placeholder="podaj imię poprzedniego dziecka" name="imie_dziecka_pop" id="imie_dziecka_pop">
+                </div>
+                <p class="col-sm-12"></p>
+
+                <label class="col-sm-3 control-label">Czy było karmione piersią?</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="karmienie_piers_pop" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="karmienie_piers_pop" value="1">tak</label>
+                </div>
+
+                <div id="karmienie_piers_pop_opis_show">
+                    <label class="col-sm-1 control-label">jak długo?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jak długo?" name="karmienie_piers_pop_opis" id="karmienie_piers_pop_opis">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="dziecko_pop2_show" class="form-group" >
+
+                <label class="col-sm-3 control-label">Imię poprzedniego dziecka</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" placeholder="podaj imię poprzedniego dziecka" name="imie_dziecka_pop2" id="imie_dziecka_pop2">
+                </div>
+                <p class="col-sm-12"></p>
+
+                <label class="col-sm-3 control-label">Czy było karmione piersią?</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="karmienie_piers_pop2" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="karmienie_piers_pop2" value="1">tak</label>
+                </div>
+
+                <div id="karmienie_piers_pop2_opis_show">
+                    <label class="col-sm-1 control-label">jak długo?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jak długo?" name="karmienie_piers_pop2_opis" id="karmienie_piers_pop2_opis">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <h3 class="col-sm-12">Miejsce urodzenia dziecka</h3>
+
+                <label class="col-sm-3 control-label">imiejsce urodzenia</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="miejsce_urodzenia_quest" value="0" >Szpital</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="miejsce_urodzenia_quest" value="1">inne miejsce</label>
+                </div>
+
+                <label class="col-sm-3 control-label">Pobierz</label>
+                <div class="col-sm-3">
+                    <select  id="pobrane_miejsce" name="pobrane_miejsce">
+                        <option></option>
+                    </select>
+                </div>
+
+                <p class="col-sm-12"></p>
+
+                <div id="szpital_show">
+                    <label class="col-sm-3 control-label">Szpital</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="nazwa szpitala" name="miejsce_urodzenia_sz" id="miejsce_urodzenia_sz" >
+                    </div>
+                </div>
+
+                <div id="innemiejsce_show">
+                    <label class="col-sm-3 control-label">inne miejsce</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jakie miejsce?" name="miejsce_urodzenia_im" id="miejsce_urodzenia_im" >
+                    </div>
+                </div>
+
+                <p class="col-sm-12"></p>
+
+                <label class="col-sm-3 control-label">Ulica</label>
+                <div class="col-sm-4">
+                    <input class="form-control" type="text" placeholder="ulica" name="urodz_ulica" id="urodz_ulica">
+                </div>
+
+                <div class="col-sm-1">
+                    <input class="form-control" type="text" placeholder="nr" name="urodz_ulica_nr" id="urodz_ulica_nr">
+                </div>
+
+                <div class="col-sm-1">
+                    <input class="form-control" type="text" placeholder="m" id="urodz_ulica_nr_mieszkanie" name="urodz_ulica_nr_mieszkanie">
+                </div>
+
+                <p class="col-sm-12"></p>
+
+                <label class="col-sm-3 control-label">kod</label>
+                <div class="col-sm-1">
+                    <input class="form-control" type="text" placeholder="kod" name="urodz_kod_poczt" id="urodz_kod_poczt">
+                </div>
+
+                <label class="col-sm-1 control-label">Miasto</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" placeholder="Miasto" name="urodz_miasto" id="urodz_miasto">
+                </div>
+
+                <label class="col-sm-1 control-label">Kraj</label>
+                <div class="col-sm-2">
+                    <input class="form-control" type="text" placeholder="Kraj" name="urodz_kraj" id="urodz_kraj">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h3 class="col-sm-12">Dane porodu</h3>
+
+                <label class="col-sm-3 control-label">urodzone:</label>
+                <div class="col-sm-3">
+                    <select  id="urodzone_czas" name="urodzone_czas">
+                        <option value="o czasie">o czasie</option>
+                        <option value="wcześniej">wcześniej</option>
+                        <option value="później">później</option>
+                    </select>
+                </div>
+
+                <div id="urodzone_czas_show" >
+                    <label class="col-sm-2 control-label">ile?</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" type="text" placeholder="ile" name="ile_wczesniej" id="ile_wczesniej">
+                    </div>  
+                </div>
+            </div>
+            <!--  PORÓD  -->
+            <div class="form-group">
+
+                <label class="col-sm-3 control-label">poród:</label>
+                <div class="col-sm-3">
+                    <select  id="porod" name="porod">
+                        <option value="normalny">normalny</option>
+                        <option value="zabiegowy">zabiegowy</option>
+                    </select>
+                </div>
+
+                <div id='porod_show' >
+                    <label class="col-sm-2 control-label">jaki?</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" type="text" placeholder="jaki?" name="jaki_porod" id="jaki_porod">
+                    </div>  
+                </div>
+            </div>
+            <!--  LEKI  -->
+            <div class="form-group">
+
+                <label class="col-sm-3 control-label">Leki w czasie porodu</label>
+                <div class="col-sm-3">
+                    <textarea class="form-control" placeholder="leki" name="leki_porod" id="leki_porod"></textarea>
+                </div>
+                <label class="col-sm-2 control-label">Leki w czasie połogu</label>
+                <div class="col-sm-3">
+                    <textarea class="form-control" placeholder="leki" name="leki_polog" id="leki_polog"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

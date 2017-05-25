@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!----------------------------------------------------
+* Project:     Klinika_Local
+* Filename:    Login.html
+* Encoding:    UTF-8
+* Created:     2016-08-05
+*
+* Author       Bartosz M. Lewiński <jabarti@wp.pl>
+------------------------------------------------------>
+<html>
+    <body>
+        <script src="Controllers/LoginController.js" type="text/javascript"></script>
+        <div class="panel">
+            <h3 class="panel-heading" >Login form</h3>
+
+            <form id='LoginForm' name="LoginForm" class="panel-body" novalidate >
+                <fieldset class="well">
+                    <div class="form-group">
+                        <label for="email">Użytkownik lub E-mail: </label>
+                        <input type="email" required id="email" class="form-control" name="email">
+                        <!--div class="error">
+                                <span >Please enter a valid email address </span>
+                                <span >Please enter a value</span>
+                        </div-->
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password: </label>
+                        <input type="password" required id="password" class="form-control" name="pass">
+                        <div id="errorPass" class="error" >
+                            <span >Please enter a valid password (6 signs, at least one small or one capital letter and one nubmer)</span>
+                        </div><!-- -->
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-log-in"></span>  Zaloguj</button> 
+                </fieldset>
+            </form>
+            <!--button id="SendPass" class="btn btn-primary btn-block"><span class="glyphicon glyphicon-log-in"></span>  Przypomnij hasło</button> <!-- -->
+            
+            <button class="btn btn-primary" onclick="window.open('http://bartilevi.pl/Klinika/','_blank')">Do Klinika (prod)</button>
+            
+            <span id='responsTEST'><span>
+
+                    <!--
+                   <p class="bg-success login-info" >Logowanie poprawne</p>
+                   <p class="bg-warning login-info" >Niepoprawne login lub hasło</p>
+                   <p class="bg-danger login-info" >Błąd usługi</p>
+                    <!-- -->
+                    </div>
+                    </body>
+                    </html>

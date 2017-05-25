@@ -1,0 +1,26 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-06-19, 20:50:54
+    Author     : Bartek
+*/
+.form-buffer-pa {
+    /*margin: 30px 0px;*/
+    /*background-color: #006dcc;*/
+    background-color: #f2dede;
+
+}
+.form-buffer-npa {
+    /*margin: 30px 0px;*/
+    /*background-color: #006dcc;*/
+    background-color: #d9edf7;
+
+}
+
+/* obszar z coordynatami w cyckach */
+.hidden_elem{
+    display: none;
+}

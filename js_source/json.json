@@ -1,0 +1,17 @@
+[
+    {
+        "city" : "Częstochowa",
+        "airport" : false,
+        "provincial": false
+    },
+    {
+        "city" : "Katowicze",
+        "airport" : false,
+        "provincial": true
+    },
+    {
+        "city" : "Warszawa",
+        "airport" : true,
+        "provincial": true
+    }
+]

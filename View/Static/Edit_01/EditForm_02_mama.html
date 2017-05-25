@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="form-group form-buffer-npa">
+            <h2>Mama: </h2>
+            <div class="form-group">
+
+                <div>
+                    <input type="hidden" id="idMatka" name="idMatka" class="form-control">
+                </div>
+
+                <label class="col-sm-3 control-label">Imię</label>
+                <div class="col-sm-3">
+                    <input id="mama_firstname" name="mama_firstname" class="form-control" type="text" placeholder="podaj imię mamy" required>
+                </div>
+
+                <label class="col-sm-2 control-label">Nazwisko</label>
+                <div class="col-sm-3">
+                    <input id="mama_lastname" name="mama_lastname" class="form-control" type="text" placeholder="podaj nazwisko mamy" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Data urodzenia</label>
+                <div class="col-sm-3">
+                    <!--<input type="date" id="data_urodzenia_matka" name="data_urodzenia_matka" min="1945-01-01" max="2013-12-31"  required/><!-- -->
+                    <input type="text" id="data_urodzenia_matka" name="data_urodzenia_matka" required/>                   
+                </div>
+
+                <label class="col-sm-2 control-label">Wiek dziś</label>
+                <div class="col-sm-3">
+                    <input id="wiek_matki_dzis" class="form-control" type="text" disabled>
+                </div>
+
+                <label class="col-sm-8 control-label">Wiek wtedy</label>
+                <div class="col-sm-3">
+                    <input id="wiek_matka_wtedy" class="form-control" type="text" disabled>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h3 class="col-sm-12">Adres</h3>
+                <label class="col-sm-3 control-label">Ulica</label>
+                <div class="col-sm-4">
+                    <input id="ulica" name="ulica" class="form-control" type="text" placeholder="ulica" >
+                </div>
+
+                <div class="col-sm-1">
+                    <input id="ulica_nr" name="ulica_nr" class="form-control" type="text" placeholder="nr" >
+                </div>
+
+                <div class="col-sm-1">
+                    <input id="ulica_nr_mieszkanie" name="ulica_nr_mieszkanie" class="form-control" type="text" placeholder="m" >
+                </div>
+
+                <p class="col-sm-12"></p>
+
+                <label class="col-sm-3 control-label">kod</label>
+                <div class="col-sm-1">
+                    <input id="kod_poczt" name="kod_poczt" class="form-control" type="text" placeholder="kod"  >
+                </div>
+
+                <label class="col-sm-2 control-label">Miasto</label>
+                <div class="col-sm-3">
+                    <input id="miasto" name="miasto" class="form-control" type="text" placeholder="Miasto"  >
+                </div>
+                <p class="col-sm-12"></p>
+
+                <label class="col-sm-3 control-label">Telefon</label>
+                <div class="col-sm-2">
+                    <input id="telefon" name="telefon" class="form-control" type="text" placeholder="telefon" >
+                </div>
+
+                <label class="col-sm-1 control-label">email</label>
+                <div class="col-sm-3">
+                    <input id="email" name="email" class="form-control" type="email" placeholder="twój email"  >
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

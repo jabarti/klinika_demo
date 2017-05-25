@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="form-group form-buffer-npa">
+            <h2>Karmienie obecnie</h2>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Karmienie piersią</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="karmienie_piers" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="karmienie_piers" value="1">tak</label>
+                </div>
+
+                <div id='karmienie_piers_show'>
+                    <label class="col-sm-1 control-label">jak często?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jak często" name="karmienie_piers_czest" id="karmienie_piers_czest">
+                    </div>
+                    <p class="col-sm-12"></p>
+                    <label  class="col-sm-6 control-label">jak długo?</label>
+                    <div  class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jak dlugo" name="karmienie_piers_dlugo" id="karmienie_piers_dlugo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Kapturek</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="kapturek2" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="kapturek2" value="1">tak</label>
+                </div>
+
+                <div id='kapturek2_show'>
+                    <label  class="col-sm-1 control-label">jakie?</label>
+                    <div  class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="od kiedy/jak długo" name="kapturek2_opis" id="kapturek2_opis">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Dokarmianie, dopajanie</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="dopajanie2" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="dopajanie2" value="1">tak</label>
+                </div>
+
+                <div id='dopajanie2_show'>
+                    <label  class="col-sm-1 control-label">czym?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="czym" name="dopajanie2_czym" id="dopajanie2_czym">
+                    </div>
+                    <label  class="col-sm-6 control-label">jak długo?</label>
+                    <div  class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="dopajanie jak dlugo" name="dopajanie2_jak_dlugo" id="dopajanie2_jak_dlugo">
+                    </div>
+                    <label  class="col-sm-6 control-label">jakie?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="jak" name="dopajanie2_opis" id="dopajanie2_opis">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Karmienie nocne</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="karmienie_noc" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="karmienie_noc" value="1">tak</label>
+                </div>
+
+                <div id='karmienie_noc_show'>
+                    <label class="col-sm-1 control-label">ile razy?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="ile razy" name="karmienie_noc_opis" id="karmienie_noc_opis">
+                    </div>           
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Ściąganie pokarmu</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio"  name="sciaganie_pokarm" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio"  name="sciaganie_pokarm" value="1">tak</label>
+                </div>
+
+                <div id='sciaganie_pokarm_show'>
+                    <label class="col-sm-1 control-label">w jakim celu?</label>
+                    <div  class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="w jakim celu" name="sciaganie_pokarm_cel" id="sciaganie_pokarm_cel">
+                    </div>
+                    <p class="col-sm-12"></p>
+                    <label  class="col-sm-6 control-label">ile?</label>
+                    <div class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="ile" name="sciaganie_pokarm_ile" id="sciaganie_pokarm_ile">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Moczenie pieluch</label>
+                <div class="col-sm-4">
+                    <input class="form-control" type="text" placeholder="" name="pieluchy" id="pieluchy">
+                </div>
+                <p class="col-sm-12"></p>
+                <label class="col-sm-3 control-label">Oddawanie stolca</label>
+                <div class="col-sm-4">
+                    <input class="form-control" type="text" placeholder="" name="stolec" id="stolec">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Aktywność, samo się wybudza</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio"  name="aktywnosc" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio"  name="aktywnosc" value="1">tak</label>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Zachowanie między karmieniami</label>
+                <div class="col-sm-4">
+                    <input class="form-control" type="text" placeholder="" name="zachowanie_karmienia" id="zachowanie_karmienia">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Objawy kolki</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio" name="kolka" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio" name="kolka" value="1">tak</label>
+                </div>                        
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Uspokajacz</label>
+
+                <div class="radio col-sm-1" >
+                    <label><input type="radio"  name="uspokajacz" value="0" >nie</label>
+                </div>
+                <div class="radio col-sm-1">
+                    <label><input type="radio"  name="uspokajacz" value="1">tak</label>
+                </div>
+
+                <div id ='uspokajacz_show'>
+                    <label  class="col-sm-1 control-label">tak,</label>
+                    <div  class="col-sm-4">
+                        <input class="form-control" type="text" placeholder="" name="uspokajacz_opis" id="uspokajacz_opis">
+                    </div>   
+                </div>
+            </div>
+            <div class="form-group">
+                <h3 class="col-sm-12">Stosowanie leków</h3>
+
+                <label class="col-sm-3 control-label">Matka</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" placeholder="" name="leki_matka" id="leki_matka">
+                </div>
+                <label class="col-sm-2 control-label">Dziecko</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" placeholder="" name="leki_dziecko" id="leki_dziecko">
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

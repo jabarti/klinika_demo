@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!----------------------------------------------------
+* Project:     Klinika_Local
+* Filename:    NyForm_08_obserwacjaDz.html
+* Encoding:    UTF-8
+* Created:     2016-08-06
+*
+* Author       Bartosz M. Lewiński <jabarti@wp.pl>
+------------------------------------------------------>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <div class="form-group form-buffer-npa">
+            <h2>Obserwacja dziecka </h2>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Obserwacja dziecka</label>
+                <div class="col-sm-7">
+                    <textarea class="form-control" placeholder="" name="obserwacja_dziecka" id="obserwacja_dziecka"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">masa urodzeniowa</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_ur" id="masa_ur">
+                </div>
+                <label class="col-sm-1 control-label">data</label>
+                <div class="col-sm-2">
+                    <input type="date" name="data_01" id="data_01" min="2000-01-01" max="2018-12-31" />
+                </div>   
+                <p class="col-sm-12"></p>
+
+                <label class="col-sm-3 control-label">masa najniższa</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_min" id="masa_min">
+                </div>
+                <label class="col-sm-1 control-label">data</label>
+                <div class="col-sm-2">
+                    <input type="date" name="data_02" id="data_02" min="2000-01-01" max="2018-12-31" />
+                </div>
+                <p class="col-sm-12"></p>
+
+                <div>
+                    <label class="col-sm-3 control-label">inne masy</label>
+
+                    <div class="col-sm-3">
+                        <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_inne_a" id="masa_inne_a">
+                    </div>
+                    <label class="col-sm-1 control-label">data</label>
+                    <div class="col-sm-2">
+                        <input type="date" name="data_03a" id="data_03a" min="2000-01-01" max="2018-12-31" />
+                    </div>
+
+                    <label class="col-sm-1 control-label">dodaj</label>
+                    <div class="col-sm-1">
+                        <input type="checkbox" id="add_01" name="add_01">
+                    </div>
+                    <p class="col-sm-12"></p>
+                </div>
+
+                <div id='add_01_show'>
+                    <label class="col-sm-3 control-label">inne masy</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_inne_b" id="masa_inne_b">
+                    </div>
+                    <label class="col-sm-1 control-label">data</label>
+                    <div class="col-sm-2">
+                        <input type="date" name="data_03b" id="data_03b" min="2000-01-01" max="2018-12-31" />
+                    </div>
+                    <label class="col-sm-1 control-label">dodaj</label>
+                    <div class="col-sm-1">
+                        <input type="checkbox" id="add_02" name="add_02">
+                    </div>
+                    <p class="col-sm-12"></p>
+                </div>
+                <div id='add_02_show'>
+                    <label class="col-sm-3 control-label">inne masy</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_inne_c" id="masa_inne_c">
+                    </div>
+                    <label class="col-sm-1 control-label">data</label>
+                    <div class="col-sm-2">
+                        <input type="date" name="data_03c" id="data_03c" min="2000-01-01" max="2018-12-31" />
+                    </div>
+                    <label class="col-sm-1 control-label">dodaj</label>
+                    <div class="col-sm-1">
+                        <input type="checkbox" id="add_03" name="add_03">
+                    </div>
+                    <p class="col-sm-12"></p>
+                </div>
+                <div id='add_03_show'>
+                    <label class="col-sm-3 control-label">inne masy</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_inne_d" id="masa_inne_d">
+                    </div>
+                    <label class="col-sm-1 control-label">data</label>
+                    <div class="col-sm-2">
+                        <input type="date" name="data_03d" id="data_03d" min="2000-01-01" max="2018-12-31" />
+                    </div>
+                    <label class="col-sm-1 control-label">dodaj</label>
+                    <div class="col-sm-1">
+                        <input type="checkbox" id="add_04" name="add_04">
+                    </div>
+                    <p class="col-sm-12"></p>
+                </div>
+                <div id='add_04_show'>
+                    <label class="col-sm-3 control-label">inne masy</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_inne_e" id="masa_inne_e">
+                    </div>
+                    <label class="col-sm-1 control-label">data</label>
+                    <div class="col-sm-2">
+                        <input type="date" name="data_03e"  id="data_03e" min="2000-01-01" max="2018-12-31" />
+                    </div>
+                    <label class="col-sm-1 control-label">dodaj</label>
+                    <div class="col-sm-1">
+                        <input type="checkbox" id="add_05" name="add_05">
+                    </div>
+                    <p class="col-sm-12"></p>
+                </div>
+                <div id='add_05_show'>
+                    <label class="col-sm-3 control-label">inne masy</label>
+                    <div class="col-sm-3">
+                        <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_inne_f" id="masa_inne_f">
+                    </div>
+                    <label class="col-sm-1 control-label">data</label>
+                    <div class="col-sm-2">
+                        <input type="date" name="data_03f" id="data_03f" min="2000-01-01" max="2018-12-31" />
+                    </div>
+                    <p class="col-sm-12"></p>
+                </div>
+
+                <label class="col-sm-3 control-label">masa obecna</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="number" min='0' step='0.01' placeholder="0,00" name="masa_obecna" id="masa_obecna">
+                </div>
+                <label class="col-sm-1 control-label">data</label>
+                <div class="col-sm-2">
+                    <input type="date" name="data_04"  id="data_04" min="2000-01-01" max="2018-12-31" />
+                </div>
+                <p class="col-sm-12"></p>
+                <label class="col-sm-3 control-label">przyrost średni</label>
+                <div class="col-sm-3">
+                    <input class="form-control" type="text" name="przyrost_sredni" id="przyrost_sredni">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Zachowanie dziecka w trakcie wizyty</label>
+                <div class="col-sm-7">
+                    <textarea class="form-control" placeholder="zachowanie dziecka" name="zachowanie_dziecka_wizyta" id="zachowanie_dziecka_wizyta"></textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
